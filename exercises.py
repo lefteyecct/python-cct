@@ -1,18 +1,69 @@
-# Welcome to the first set of exercises
 """
-==== Exercise 1: add and remove comments ====
-In the below example comment out the first line of code and uncomment the second,
-then run the file.
-"""
-# print("This shouldn't print")
-# print("This should print")
-"""
-==== Exercise 2: print multiple things ====
-For this exercise we are going to print multiple things at once. To do this we can
-have each thing added to the print function as arguments (comma delimited).
-For example: print("Hello","World!")
-For this exercise print your name instead of world. (Try your first and last name also)
+    =========== Exercise 1 =============
+
+    Using a list, create a shopping list of 5 items. Then
+    print the whole list, and then each item individually.
 """
 
-print("Hello, JJ O'Sullivan")
+shopping_list = ["Shoes", "Hand bag", "Necklace", "Dress", "Top", "Pants"] # Fill in with some values
+
+print(shopping_list) # Print the whole list
+
+print() # Figure out how to print individual values
+
+
+"""
+    =========== Exercise 2 =============
+
+    Find something that you can eat that has nutrition
+    facts on the label. Fill in the dictionary below with
+    the info on the label and try printing specific information.
+
+    If you can't find anything nearby you can use this example: https://www.donhummertrucking.com/media/cms/Nutrition_Facts_388AE27A88B67.png
+"""
+# When ready to work on these exercises uncomment below code
+
+nutrition_facts = {
+                    "Energy":"519kl",    
+                    "fat"   :"12g",
+                    "Carbohydrate":"52g",
+                    "Fibre":"2.8g",
+                    "Protein":7.7,
+                    "Salt": "0.72"
+                } # Fill in with the nutrition facts from the label
+
+print(nutrition_facts) # Print all the nutrition facts
+
+print(nutrition_facts["Protein"]) # Uncomment this line and pick a value to print individually
+
+"""
+    =========== Exercise 3 =============
+
+    Python has a function built in to allow you to
+    take input from the command line and store it.
+
+    The function is called input() and it takes one
+    argument, which is the string to display when
+    asking the user for input.
+
+
+    Here is an example:
+    ```
+    >> name = input('What is your name?: ')
+
+    >> print(name)
+    ```
+
+    Using the information about type casting take an input
+    from the command line (which is always a string), convert
+    it to an int and then double it and print it.
+
+    i.e. if the user provides 21 then the program should print 42
+"""
+
+# When ready to work on these exercises uncomment below code
+
+age = input('What is your age?: ')
+
+print(int(age) * 2) # Find a way to convert the age to an int and multiply by 2
 
