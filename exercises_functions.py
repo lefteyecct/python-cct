@@ -53,14 +53,13 @@ def delete_item(list_to_parse, item_index):
     """
     # Do stuff here
     
-    del list_to_parse[1]
-    print(list_to_parse)
+    del list_to_parse[item_index]
     return list_to_parse
 
     #pass # This just tells python to do nothing; remove it when you add your code
 
 shopping_list = ["eggs", "ham", "sausages"] # A test list to remove an item from
 
-shopping_list = delete_item(shopping_list, 1) # Should remove 'ham' from the list
+shopping_list = delete_item(shopping_list, 0) # Should remove 'ham' from the list
 
 print(shopping_list)
