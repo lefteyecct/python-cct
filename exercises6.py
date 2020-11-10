@@ -7,7 +7,11 @@
     NOTE: you have the input converted to an int
     automatically using int(input()).
 """
+import math
 
+num = int(input("provide a number: "))
+square_root = int(math.sqrt(num))
+print (f"square root is {square_root}")
 
 """
     =========== Exercise 2 =============

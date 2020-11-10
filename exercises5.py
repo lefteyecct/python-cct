@@ -30,7 +30,7 @@ class Contractor:
         ----------
         length(int): How long the structure that needs to be built is.
         """
-        number_of_planks = int(length/self.plank_length) # Just a dummy value, replace with the real calculation
+        number_of_planks = length//self.plank_length # Just a dummy value, replace with the real calculation
         return f"You need {number_of_planks} plank(s) of wood to build this wall"
 
 dave = Contractor(2)
