@@ -13,11 +13,12 @@ class Account:
     def withdraw(self, amount_withdraw):
         if (amount_withdraw <= self.balance):
             self.balance -= amount_withdraw
+            print(f"Your current balance is {self.balance}.")
         else:
             print("Not enough money to withdraw!")
         return self.balance
 # 1. Instantiate the class
-acct1 = Account('JJ',10000)
+acct1 = Account('JJ',575)
 # 2. Print the object
 print(acct1) # Account owner: Jose, Account balance: €100
 # 3. Show the account owner attribute
@@ -29,4 +30,4 @@ acct1.deposit(50) # Deposit Accepted
 acct1.withdraw(75) # Withdrawal Accepted
 # 6. Make a withdrawal that exceeds the available balance
 acct1.withdraw(500) # Funds Unavailable!
-
+print(acct1)
