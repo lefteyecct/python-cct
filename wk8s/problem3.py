@@ -9,14 +9,14 @@ class Account:
         self.balance += amount
         print(f"Your current balance is {self.balance}.")
         print(f"Your have successfully logged {amount}!")
-        return self.balance
+#        return self.balance
     def withdraw(self, amount_withdraw):
         if (amount_withdraw <= self.balance):
             self.balance -= amount_withdraw
             print(f"Your current balance is {self.balance}.")
         else:
             print("Not enough money to withdraw!")
-        return self.balance
+#        return self.balance
 # 1. Instantiate the class
 acct1 = Account('JJ',575)
 # 2. Print the object
