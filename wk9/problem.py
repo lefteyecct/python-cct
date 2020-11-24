@@ -19,6 +19,15 @@ Do not convert the integers to strings!
 from functools import reduce
 
 def digits_to_num(digits):    
-    pass
+    return print(reduce(lambda x,y:x*10 + y,digits))
 
 digits_to_num([3,4,3,2,1])
+
+"""
+Use filter to return the words from a list of words which start with a target letter.
+"""
+def filter_words(word_list, letter):
+    return print(list(filter(lambda word:word[0]==letter,word_list)))
+
+l = ['hello','are','cat','dog','ham','hi','go','to','heart']
+filter_words(l,'h')
