@@ -31,3 +31,13 @@ def filter_words(word_list, letter):
 
 l = ['hello','are','cat','dog','ham','hi','go','to','heart']
 filter_words(l,'h')
+
+"""
+Use zip() and a list comprehension to return a list of the same length where each value is the two strings from L1 and L2 concatenated together with connector between them.
+"""
+def concatenate(L1, L2, connector):    
+    return print((list(zip(L1,L2))))
+
+
+concatenate(['A','B'],['a','b'],'-')
+
